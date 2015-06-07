@@ -81,4 +81,6 @@ def all_commerce_prices(purge=False):
 
 if __name__ == "__main__":
 
+    db.create_database()
+
     all_commerce_prices(purge=True)
