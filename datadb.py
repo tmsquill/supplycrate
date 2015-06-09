@@ -95,7 +95,7 @@ def create_table(name="default"):
 
         print 'Creating table: ' + name
 
-        cur.execute("CREATE TABLE " + name + " (id serial, data json)")
+        cur.execute("CREATE TABLE " + name + " (id integer, data json)")
 
         connection.commit()
 
