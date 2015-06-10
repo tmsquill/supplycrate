@@ -1,6 +1,9 @@
 # Compiled Sources #
 *.pyc
 
+# Unit Testing #
+*.coverage
+
 # IDE Generated Files #
 *.idea
 
