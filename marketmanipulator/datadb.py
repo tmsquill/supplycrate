@@ -55,35 +55,6 @@ def create_database(name="market_manipulator"):
             connection.close()
 
 
-def drop_table(name="default"):
-
-    connection = None
-
-    try:
-
-        connection = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
-        cur = connection.cursor()
-
-        print 'Dropping table: ' + name
-
-        cur.execute("DROP TABLE IF EXISTS " + name)
-
-        connection.commit()
-
-    except psycopg2.DatabaseError, e:
-
-        if connection:
-            connection.rollback()
-
-        print 'Database Error: %s' % e
-        sys.exit(1)
-
-    finally:
-
-        if connection:
-            connection.close()
-
-
 def create_table(name="default"):
 
     connection = None
@@ -113,7 +84,7 @@ def create_table(name="default"):
             connection.close()
 
 
-def insert_item(id=None, item=None):
+def drop_table(name="default"):
 
     connection = None
 
@@ -122,7 +93,9 @@ def insert_item(id=None, item=None):
         connection = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
         cur = connection.cursor()
 
-        cur.execute("INSERT INTO items (id, data) VALUES (%s, %s)", [id, Json(item)])
+        print 'Dropping table: ' + name
+
+        cur.execute("DROP TABLE IF EXISTS " + name)
 
         connection.commit()
 
@@ -140,7 +113,7 @@ def insert_item(id=None, item=None):
             connection.close()
 
 
-def insert_commerce_listing(id=None, listing=None):
+def insert(items=[], commerce_listings=[], commerce_prices=[]):
 
     connection = None
 
@@ -149,7 +122,17 @@ def insert_commerce_listing(id=None, listing=None):
         connection = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
         cur = connection.cursor()
 
-        cur.execute("INSERT INTO commerce_listings (id, data) VALUES (%s, %s)", [id, Json(listing)])
+        for item in items:
+
+            cur.execute("INSERT INTO items (id, data) VALUES (%s, %s)", [item[u'id'], Json(item)])
+
+        for commerce_listing in commerce_listings:
+
+            cur.execute("INSERT INTO commerce_listings (id, data) VALUES (%s, %s)", [commerce_listing[u'id'], Json(commerce_listing)])
+
+        for commerce_price in commerce_prices:
+
+            cur.execute("INSERT INTO commerce_prices (id, data) VALUES (%s, %s)", [commerce_price[u'id'], Json(commerce_price)])
 
         connection.commit()
 
@@ -167,7 +150,7 @@ def insert_commerce_listing(id=None, listing=None):
             connection.close()
 
 
-def insert_commerce_price(id=None, price=None):
+def remove(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[]):
 
     connection = None
 
@@ -176,7 +159,17 @@ def insert_commerce_price(id=None, price=None):
         connection = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
         cur = connection.cursor()
 
-        cur.execute("INSERT INTO commerce_prices (id, data) VALUES (%s, %s)", [id, Json(price)])
+        for item_id in items_ids:
+
+            cur.execute("DELETE FROM items WHERE id = (%s)", [item_id])
+
+        for commerce_listing_id in commerce_listings_ids:
+
+            cur.execute("DELETE FROM commerce_listings WHERE id = (%s)", [commerce_listing_id])
+
+        for commerce_price_id in commerce_prices_ids:
+
+            cur.execute("DELETE FROM commerce_prices WHERE id = (%s)", [commerce_price_id])
 
         connection.commit()
 
