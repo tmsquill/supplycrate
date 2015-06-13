@@ -113,6 +113,50 @@ def drop_table(name="default"):
             connection.close()
 
 
+def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[]):
+
+    connection = None
+
+    try:
+
+        connection = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
+        cur = connection.cursor()
+
+        items = None
+        commerce_listings = None
+        commerce_prices = None
+
+        if len(items_ids) > 0:
+
+            cur.execute("SELECT * FROM items WHERE id IN %s;", (tuple(items_ids),))
+
+            items = cur.fetchall();
+
+        if len(commerce_listings_ids) > 0:
+
+            cur.execute("SELECT * FROM commerce_listings WHERE id IN %s;", (tuple(commerce_listings_ids),))
+
+            commerce_listings = cur.fetchall();
+
+        if len(commerce_prices_ids) > 0:
+
+            cur.execute("SELECT * FROM commerce_prices WHERE id IN %s;", (tuple(commerce_prices_ids),))
+
+            commerce_prices = cur.fetchall();
+
+        return items, commerce_listings, commerce_prices
+
+    except psycopg2.DatabaseError, e:
+
+        print 'Database Error: %s' % e
+        sys.exit(1)
+
+    finally:
+
+        if connection:
+            connection.close()
+
+
 def insert(items=[], commerce_listings=[], commerce_prices=[]):
 
     connection = None
@@ -185,3 +229,7 @@ def remove(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[]):
 
         if connection:
             connection.close()
+
+if __name__ == "__main__":
+
+    print select(items_ids=[75, 96])
