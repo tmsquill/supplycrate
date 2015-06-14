@@ -12,7 +12,7 @@ def all_items(purge=False):
     if purge:
 
         db.drop_table('items')
-        db.create_table('items')
+        db.create_json_table('items')
 
     commerce_items_ids = du.chunks(it.items(), 200)
 
@@ -30,7 +30,7 @@ def all_commerce_listings(purge=False):
     if purge:
 
         db.drop_table('commerce_listings')
-        db.create_table('commerce_listings')
+        db.create_json_table('commerce_listings')
 
     commerce_listings_ids = du.chunks(tp.commerce_listings(), 200)
 
@@ -48,7 +48,7 @@ def all_commerce_prices(purge=False):
     if purge:
 
         db.drop_table('commerce_prices')
-        db.create_table('commerce_prices')
+        db.create_json_table('commerce_prices')
 
     commerce_prices_ids = du.chunks(tp.commerce_prices(), 200)
 

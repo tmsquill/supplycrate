@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6060d06b-d004-473b-a222-33ef3b2b24bf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/marketmanipulator/snippets.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/databatch.py" afterPath="$PROJECT_DIR$/marketmanipulator/databatch.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/datadb.py" afterPath="$PROJECT_DIR$/marketmanipulator/datadb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -17,11 +19,12 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/MarketManipulator$dataupdate.coverage" NAME="dataupdate Coverage Results" MODIFIED="1434256828192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
     <SUITE FILE_PATH="coverage/MarketManipulator$datadb.coverage" NAME="datadb Coverage Results" MODIFIED="1434233019101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
     <SUITE FILE_PATH="coverage/MarketManipulator$built_in_functions.coverage" NAME="built_in_functions Coverage Results" MODIFIED="1433814463813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MarketManipulator$snippets.coverage" NAME="snippets Coverage Results" MODIFIED="1433818876952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MarketManipulator$mm_pull.coverage" NAME="mm_pull Coverage Results" MODIFIED="1433218452416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MarketManipulator$databatch.coverage" NAME="databatch Coverage Results" MODIFIED="1433993092486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
+    <SUITE FILE_PATH="coverage/MarketManipulator$mm_pull.coverage" NAME="mm_pull Coverage Results" MODIFIED="1433218452416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MarketManipulator$snippets.coverage" NAME="snippets Coverage Results" MODIFIED="1433818876952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,21 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/marketmanipulator/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="databatch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/marketmanipulator/databatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
               </folding>
@@ -57,34 +50,45 @@
       <file leaf-file-name="datadb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33734939">
-              <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.44526902">
+              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
                 <element signature="e#22#37#0" expanded="true" />
-                <marker date="1434233018000" expanded="true" signature="1314:1363" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434233018000" expanded="true" signature="1868:1889" placeholder="DROP TABLE I..." />
-                <marker date="1434233018000" expanded="true" signature="2526:2558" placeholder="SELECT * FRO..items..." />
-                <marker date="1434233018000" expanded="true" signature="2526:2560" placeholder="SELECT * FRO..items..." />
-                <marker date="1434233018000" expanded="true" signature="2532:2545" placeholder="INSERT INTO ..." />
-                <marker date="1434233018000" expanded="true" signature="2692:2736" placeholder="SELECT * FRO..items..." />
-                <marker date="1434233018000" expanded="true" signature="2892:2934" placeholder="SELECT * FRO..commerce_listings..." />
-                <marker date="1434233018000" expanded="true" signature="3514:3558" placeholder="INSERT INTO ..." />
-                <marker date="1434233018000" expanded="true" signature="3666:3722" placeholder="INSERT INTO ..." />
-                <marker date="1434233018000" expanded="true" signature="3850:3904" placeholder="INSERT INTO ..." />
-                <marker date="1434233018000" expanded="true" signature="4498:4531" placeholder="DELETE FROM ..." />
-                <marker date="1434233018000" expanded="true" signature="4630:4675" placeholder="DELETE FROM ..." />
-                <marker date="1434233018000" expanded="true" signature="4782:4825" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+                <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+                <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+                <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+                <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+                <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+                <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+                <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+                <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+                <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tradingpost.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
+      <file leaf-file-name="dataupdate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/dataupdate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
-              <folding />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#22#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +125,8 @@
         <option value="$PROJECT_DIR$/marketmanipulator/test/test_marketmanipulator.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/datasearch.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/databatch.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/snippets.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/dataupdate.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/datadb.py" />
       </list>
     </option>
@@ -160,6 +166,17 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches">
         <subPane />
       </pane>
@@ -215,17 +232,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +248,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.datadb">
+  <component name="RunManager" selected="Python.dataupdate">
     <configuration default="false" name="datadb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,6 +281,24 @@
       <module name="MarketManipulator" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marketmanipulator/databatch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dataupdate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/marketmanipulator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MarketManipulator" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marketmanipulator/dataupdate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -467,14 +491,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.datadb" />
       <item index="1" class="java.lang.String" itemvalue="Python.databatch" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dataupdate" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.datadb" />
-        <item index="1" class="java.lang.String" itemvalue="Python.databatch" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.dataupdate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.datadb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.databatch" />
       </list>
     </recent_temporary>
   </component>
@@ -491,29 +517,38 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2081545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21101573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3461047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27586207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -558,19 +593,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434233018000" expanded="true" signature="1314:1363" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434233018000" expanded="true" signature="1868:1889" placeholder="DROP TABLE I..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2558" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2560" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2532:2545" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="2692:2736" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2892:2934" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434233018000" expanded="true" signature="3514:3558" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3666:3722" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3850:3904" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="4498:4531" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4630:4675" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4782:4825" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+            <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -607,19 +651,86 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434233018000" expanded="true" signature="1314:1363" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434233018000" expanded="true" signature="1868:1889" placeholder="DROP TABLE I..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2558" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2560" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2532:2545" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="2692:2736" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2892:2934" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434233018000" expanded="true" signature="3514:3558" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3666:3722" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3850:3904" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="4498:4531" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4630:4675" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4782:4825" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+            <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/databatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+            <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+            <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -648,19 +759,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434233018000" expanded="true" signature="1314:1363" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434233018000" expanded="true" signature="1868:1889" placeholder="DROP TABLE I..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2558" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2560" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2532:2545" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="2692:2736" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2892:2934" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434233018000" expanded="true" signature="3514:3558" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3666:3722" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3850:3904" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="4498:4531" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4630:4675" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4782:4825" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+            <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -719,13 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -748,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/datautils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.coverage">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -763,13 +869,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/marketmanipulator/test/test_marketmanipulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/snippets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -790,6 +889,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1666667">
+          <caret line="72" column="71" selection-start-line="72" selection-start-column="71" selection-end-line="72" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/marketmanipulator/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -798,20 +904,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datautils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1666667">
-          <caret line="72" column="71" selection-start-line="72" selection-start-column="71" selection-end-line="72" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/databatch.py">
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,25 +928,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/dataservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/databatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/dataupdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33734939">
-          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.44526902">
+          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434233018000" expanded="true" signature="1314:1363" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434233018000" expanded="true" signature="1868:1889" placeholder="DROP TABLE I..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2558" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2526:2560" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2532:2545" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="2692:2736" placeholder="SELECT * FRO..items..." />
-            <marker date="1434233018000" expanded="true" signature="2892:2934" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434233018000" expanded="true" signature="3514:3558" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3666:3722" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="3850:3904" placeholder="INSERT INTO ..." />
-            <marker date="1434233018000" expanded="true" signature="4498:4531" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4630:4675" placeholder="DELETE FROM ..." />
-            <marker date="1434233018000" expanded="true" signature="4782:4825" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="1347:1725" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2181:2230" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1434256826000" expanded="true" signature="2679:2700" placeholder="DROP TABLE I..." />
+            <marker date="1434256826000" expanded="true" signature="3337:3377" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3453:3485" placeholder="SELECT * FRO..items..." />
+            <marker date="1434256826000" expanded="true" signature="3648:3700" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="3788:3832" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1434256826000" expanded="true" signature="4017:4067" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4153:4195" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1434256826000" expanded="true" signature="4784:4833" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="4892:5050" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5401:5465" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5601:5663" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5790:5834" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="5950:6006" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6142:6196" placeholder="INSERT INTO ..." />
+            <marker date="1434256826000" expanded="true" signature="6778:6819" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="6926:6979" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7094:7145" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7253:7286" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7393:7438" placeholder="DELETE FROM ..." />
+            <marker date="1434256826000" expanded="true" signature="7553:7596" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
