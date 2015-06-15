@@ -73,6 +73,12 @@ def create_table(items_table_name=None, commerce_listings_table_name=None, comme
                                                              "vendor_value integer, "
                                                              "flags text[], game_types text[], restrictions text[])")
 
+        if commerce_listings_table_name:
+
+            print 'Creating commerce listings table: ' + commerce_listings_table_name
+
+            cur.execute("CREATE TABLE " + commerce_listings_table_name + " (id integer, buy_listings)")
+
         con.commit()
 
     except psycopg2.DatabaseError, e:
@@ -230,7 +236,7 @@ def insert(items=[], commerce_listings=[], commerce_prices=[], scratch=False):
 
             for commerce_listing in commerce_listings:
 
-                cur.execute("INSERT INTO scratch_commerce_listings (id, data) VALUES (%s, %s)", [commerce_listing[u'id'], Json(commerce_listing)])
+                cur.execute("INSERT INTO json_commerce_listings (id, data) VALUES (%s, %s)", [commerce_listing[u'id'], Json(commerce_listing)])
 
             for commerce_price in commerce_prices:
 
