@@ -68,16 +68,29 @@ def create_table(items_table_name=None, commerce_listings_table_name=None, comme
 
             print 'Creating items table: ' + items_table_name
 
-            cur.execute("CREATE TABLE " + items_table_name + " (id integer, name text, icon text, "
-                                                             "type text, rarity text, level integer,"
-                                                             "vendor_value integer, "
-                                                             "flags text[], game_types text[], restrictions text[])")
+            cur.execute("CREATE TABLE " + items_table_name +
+                        " (id integer, name text, icon text, type text, rarity text, level integer,"
+                        "vendor_value integer, flags text[], game_types text[], restrictions text[])")
 
         if commerce_listings_table_name:
 
-            print 'Creating commerce listings table: ' + commerce_listings_table_name
+            print 'Creating commerce listings table (buy): ' + commerce_listings_table_name + "_buy"
 
-            cur.execute("CREATE TABLE " + commerce_listings_table_name + " (id integer, buy_listings)")
+            cur.execute("CREATE TABLE " + commerce_listings_table_name + "_buy" +
+                        " (id integer, buy_listings integer, buy_unit_price integer, buy_quantity integer)")
+
+            print 'Creating commerce listings table (sell): ' + commerce_listings_table_name + "_sell"
+
+            cur.execute("CREATE TABLE " + commerce_listings_table_name + "_sell" +
+                        " (id integer, sell_listings integer, sell_unit_price integer, sell_quantity integer)")
+
+        if commerce_prices_table_name:
+
+            print 'Creating commerce prices table: ' + commerce_prices_table_name
+
+            cur.execute("CREATE TABLE " + commerce_prices_table_name +
+                        "(id integer, buy_quantity integer, buy_unit_price integer, sell_quantity integer,"
+                        " sell_unit_price integer)")
 
         con.commit()
 
@@ -228,19 +241,44 @@ def insert(items=[], commerce_listings=[], commerce_prices=[], scratch=False):
 
             for item in items:
 
-                cur.execute("INSERT INTO json_items (id, data) VALUES (%s, %s)", [item[u'id'], Json(item)])
-                cur.execute("INSERT INTO scratch_items (id, name, icon, type, rarity, level, vendor_value, flags, game_types, restrictions) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                            [item[u'id'], item[u'name'], item[u'icon'], item[u'type'],
-                             item[u'rarity'], item[u'level'], item[u'vendor_value'],
-                             item[u'flags'], item[u'game_types'], item[u'restrictions']])
+                cur.execute("INSERT INTO scratch_items "
+                            "(id, name, icon, type, rarity, level, vendor_value, flags, game_types, restrictions) "
+                            "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                            [item[u'id'], item[u'name'], item[u'icon'], item[u'type'], item[u'rarity'], item[u'level'],
+                             item[u'vendor_value'], item[u'flags'], item[u'game_types'], item[u'restrictions']])
 
             for commerce_listing in commerce_listings:
 
-                cur.execute("INSERT INTO json_commerce_listings (id, data) VALUES (%s, %s)", [commerce_listing[u'id'], Json(commerce_listing)])
+                for buy in xrange(len(commerce_listing[u'buys'])):
+
+                    buy_listings = commerce_listing[u'buys'][buy][u'listings']
+                    buy_unit_price = commerce_listing[u'buys'][buy][u'unit_price']
+                    buy_quantity = commerce_listing[u'buys'][buy][u'quantity']
+
+                    cur.execute("INSERT INTO scratch_commerce_listings_buy" +
+                                "(id, buy_listings, buy_unit_price, buy_quantity) "
+                                "VALUES (%s, %s, %s, %s)",
+                                [commerce_listing[u'id'], buy_listings, buy_unit_price, buy_quantity])
+
+                for sell in xrange(len(commerce_listing[u'sells'])):
+
+                    sell_listings = commerce_listing[u'sells'][sell][u'listings']
+                    sell_unit_price = commerce_listing[u'sells'][sell][u'unit_price']
+                    sell_quantity = commerce_listing[u'sells'][sell][u'quantity']
+
+                    cur.execute("INSERT INTO scratch_commerce_listings_sell" +
+                                "(id, sell_listings, sell_unit_price, sell_quantity) "
+                                "VALUES (%s, %s, %s, %s)",
+                                [commerce_listing[u'id'], sell_listings, sell_unit_price, sell_quantity])
 
             for commerce_price in commerce_prices:
 
-                cur.execute("INSERT INTO scratch_commerce_prices (id, data) VALUES (%s, %s)", [commerce_price[u'id'], Json(commerce_price)])
+                cur.execute("INSERT INTO scratch_commerce_prices "
+                            "(id, buy_quantity, buy_unit_price, sell_quantity, sell_unit_price) "
+                            "VALUES (%s, %s, %s, %s, %s)",
+                            [commerce_price[u'id'], commerce_price[u'buys'][u'quantity'],
+                             commerce_price[u'buys'][u'unit_price'], commerce_price[u'sells'][u'quantity'],
+                             commerce_price[u'sells'][u'unit_price']])
 
         else:
 
@@ -289,7 +327,8 @@ def remove(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], scrat
 
             for commerce_listing_id in commerce_listings_ids:
 
-                cur.execute("DELETE FROM scratch_commerce_listings WHERE id = (%s)", [commerce_listing_id])
+                cur.execute("DELETE FROM scratch_commerce_listings_buy WHERE id = (%s)", [commerce_listing_id])
+                cur.execute("DELETE FROM scratch_commerce_listings_sell WHERE id = (%s)", [commerce_listing_id])
 
             for commerce_price_id in commerce_prices_ids:
 
