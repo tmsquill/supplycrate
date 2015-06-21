@@ -66,7 +66,7 @@ def create_table(items_table_name=None, commerce_listings_table_name=None, comme
 
         if items_table_name:
 
-            print 'Creating items table: ' + items_table_name
+            print 'Creating Items Table: ' + items_table_name
 
             cur.execute("CREATE TABLE " + items_table_name +
                         " (id integer, name text, icon text, type text, rarity text, level integer,"
@@ -74,19 +74,19 @@ def create_table(items_table_name=None, commerce_listings_table_name=None, comme
 
         if commerce_listings_table_name:
 
-            print 'Creating commerce listings table (buy): ' + commerce_listings_table_name + "_buy"
+            print 'Creating Commerce Listings Table (buy): ' + commerce_listings_table_name + "_buy"
 
             cur.execute("CREATE TABLE " + commerce_listings_table_name + "_buy" +
                         " (id integer, buy_listings integer, buy_unit_price integer, buy_quantity integer)")
 
-            print 'Creating commerce listings table (sell): ' + commerce_listings_table_name + "_sell"
+            print 'Creating Commerce Listings Table (sell): ' + commerce_listings_table_name + "_sell"
 
             cur.execute("CREATE TABLE " + commerce_listings_table_name + "_sell" +
                         " (id integer, sell_listings integer, sell_unit_price integer, sell_quantity integer)")
 
         if commerce_prices_table_name:
 
-            print 'Creating commerce prices table: ' + commerce_prices_table_name
+            print 'Creating Commerce Prices Table: ' + commerce_prices_table_name
 
             cur.execute("CREATE TABLE " + commerce_prices_table_name +
                         "(id integer, buy_quantity integer, buy_unit_price integer, sell_quantity integer,"
@@ -146,7 +146,7 @@ def drop_table(name="default"):
         con = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
         cur = con.cursor()
 
-        print 'Dropping table: ' + name
+        print 'Dropping Table: ' + name
 
         cur.execute("DROP TABLE IF EXISTS " + name)
 
