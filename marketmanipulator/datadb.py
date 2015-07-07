@@ -108,35 +108,6 @@ def create_table(items_table_name=None, commerce_listings_table_name=None, comme
             con.close()
 
 
-def create_json_table(name="default"):
-
-    con = None
-
-    try:
-
-        con = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
-        cur = con.cursor()
-
-        print 'Creating table: ' + name
-
-        cur.execute("CREATE TABLE " + name + " (id integer, data json)")
-
-        con.commit()
-
-    except psycopg2.DatabaseError, e:
-
-        if con:
-            con.rollback()
-
-        print 'Database Error: %s' % e
-        sys.exit(1)
-
-    finally:
-
-        if con:
-            con.close()
-
-
 def drop_table(name="default"):
 
     con = None
@@ -166,7 +137,23 @@ def drop_table(name="default"):
             con.close()
 
 
-def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], json=False, scratch=False):
+def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], scratch=False):
+
+    if (items_ids and commerce_listings_ids and commerce_prices_ids) is None:
+
+        return
+
+    if items_ids is None:
+
+        items_ids = []
+
+    if commerce_listings_ids is None:
+
+        commerce_listings_ids = []
+
+    if commerce_prices_ids is None:
+
+        commerce_prices_ids = []
 
     con = None
 
@@ -189,7 +176,7 @@ def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], json=
 
                 cur.execute("SELECT * FROM items WHERE id IN %s;", (tuple(items_ids),))
 
-            items = cur.fetchall();
+            items = cur.fetchall()
 
         if len(commerce_listings_ids) > 0:
 
@@ -201,7 +188,7 @@ def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], json=
 
                 cur.execute("SELECT * FROM commerce_listings WHERE id IN %s;", (tuple(commerce_listings_ids),))
 
-            commerce_listings = cur.fetchall();
+            commerce_listings = cur.fetchall()
 
         if len(commerce_prices_ids) > 0:
 
@@ -213,7 +200,7 @@ def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], json=
 
                 cur.execute("SELECT * FROM commerce_prices WHERE id IN %s;", (tuple(commerce_prices_ids),))
 
-            commerce_prices = cur.fetchall();
+            commerce_prices = cur.fetchall()
 
         return items, commerce_listings, commerce_prices
 
@@ -228,7 +215,23 @@ def select(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], json=
             con.close()
 
 
-def insert(items=[], commerce_listings=[], commerce_prices=[], scratch=False):
+def insert(items=None, commerce_listings=None, commerce_prices=None, scratch=False):
+
+    if (items and commerce_listings and commerce_prices) is None:
+
+        return
+
+    if items is None:
+
+        items = []
+
+    if commerce_listings is None:
+
+        commerce_listings = []
+
+    if commerce_prices is None:
+
+        commerce_prices = []
 
     con = None
 
@@ -310,7 +313,23 @@ def insert(items=[], commerce_listings=[], commerce_prices=[], scratch=False):
             con.close()
 
 
-def remove(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], scratch=False):
+def remove(items_ids=None, commerce_listings_ids=None, commerce_prices_ids=None, scratch=False):
+
+    if (items_ids and commerce_listings_ids and commerce_prices_ids) is None:
+
+        return
+
+    if items_ids is None:
+
+        items_ids = []
+
+    if commerce_listings_ids is None:
+
+        commerce_listings_ids = []
+
+    if commerce_prices_ids is None:
+
+        commerce_prices_ids = []
 
     con = None
 
@@ -354,30 +373,6 @@ def remove(items_ids=[], commerce_listings_ids=[], commerce_prices_ids=[], scrat
 
         if con:
             con.rollback()
-
-        print 'Database Error: %s' % e
-        sys.exit(1)
-
-    finally:
-
-        if con:
-            con.close()
-
-
-def compare(items=False, commerce_listings=False, commerce_prices=False):
-
-    con = None
-
-    try:
-
-        con = psycopg2.connect("dbname='market_manipulator' user='Zivia'")
-        cur = con.cursor()
-
-        cur.execute("(TABLE items EXCEPT TABLE scratch_items) UNION ALL (TABLE scratch_items EXCEPT TABLE items)")
-
-        print cur.fetchall()
-
-    except psycopg2.DatabaseError, e:
 
         print 'Database Error: %s' % e
         sys.exit(1)

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6060d06b-d004-473b-a222-33ef3b2b24bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/marketmanipulator/databatch.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/datadb.py" afterPath="$PROJECT_DIR$/marketmanipulator/datadb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/datasearch.py" afterPath="$PROJECT_DIR$/marketmanipulator/datasearch.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/dataupdate.py" afterPath="$PROJECT_DIR$/marketmanipulator/dataupdate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marketmanipulator/datautils.py" afterPath="$PROJECT_DIR$/marketmanipulator/datautils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MarketManipulator.iws" />
@@ -19,12 +21,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MarketManipulator$dataupdate.coverage" NAME="dataupdate Coverage Results" MODIFIED="1434855892344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
+    <SUITE FILE_PATH="coverage/MarketManipulator$dataupdate.coverage" NAME="dataupdate Coverage Results" MODIFIED="1434927752760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
+    <SUITE FILE_PATH="coverage/MarketManipulator$datavisualization.coverage" NAME="datavisualization Coverage Results" MODIFIED="1435503914679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
     <SUITE FILE_PATH="coverage/MarketManipulator$datadb.coverage" NAME="datadb Coverage Results" MODIFIED="1434233019101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
     <SUITE FILE_PATH="coverage/MarketManipulator$built_in_functions.coverage" NAME="built_in_functions Coverage Results" MODIFIED="1433814463813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MarketManipulator$snippets.coverage" NAME="snippets Coverage Results" MODIFIED="1433818876952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MarketManipulator$mm_pull.coverage" NAME="mm_pull Coverage Results" MODIFIED="1433218452416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MarketManipulator$databatch.coverage" NAME="databatch Coverage Results" MODIFIED="1433993092486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
+    <SUITE FILE_PATH="coverage/MarketManipulator$datasearch.coverage" NAME="datasearch Coverage Results" MODIFIED="1435503162835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/marketmanipulator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,40 +43,39 @@
         <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+              <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
               <folding>
                 <element signature="e#22#37#0" expanded="true" />
-                <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-                <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-                <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-                <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-                <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-                <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-                <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-                <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-                <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-                <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-                <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+                <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+                <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+                <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+                <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+                <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+                <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+                <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+                <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+                <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+                <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -82,20 +85,70 @@
         <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataupdate.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataupdate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/marketmanipulator/dataupdate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50576603">
-              <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
-                <element signature="e#22#32#0" expanded="true" />
+                <element signature="e#22#58#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datautils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/datautils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataservice.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/dataservice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tradingpost.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datavisualization.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/marketmanipulator/datavisualization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.01986755">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,11 +183,14 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/TODO.md" />
         <option value="$PROJECT_DIR$/marketmanipulator/test/test_marketmanipulator.py" />
-        <option value="$PROJECT_DIR$/marketmanipulator/datasearch.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/databatch.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/snippets.py" />
-        <option value="$PROJECT_DIR$/marketmanipulator/datadb.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/datautils.py" />
         <option value="$PROJECT_DIR$/marketmanipulator/dataupdate.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/datadb.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/datasearch.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/datafilter.py" />
+        <option value="$PROJECT_DIR$/marketmanipulator/datavisualization.py" />
       </list>
     </option>
   </component>
@@ -173,58 +229,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marketmanipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarketManipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="marketmanipulator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -238,6 +242,16 @@
       </pane>
       <pane id="Scratches">
         <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarketManipulator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -271,7 +285,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dataupdate">
+  <component name="RunManager" selected="Python.datavisualization">
     <configuration default="false" name="datadb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,6 +336,24 @@
       <module name="MarketManipulator" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marketmanipulator/dataupdate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="datasearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/marketmanipulator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MarketManipulator" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marketmanipulator/datasearch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -514,16 +546,37 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.datadb" />
-      <item index="1" class="java.lang.String" itemvalue="Python.databatch" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dataupdate" />
+    <configuration default="false" name="datavisualization" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/marketmanipulator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MarketManipulator" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/marketmanipulator/datavisualization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.datavisualization" />
+      <item index="1" class="java.lang.String" itemvalue="Python.datadb" />
+      <item index="2" class="java.lang.String" itemvalue="Python.databatch" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dataupdate" />
+      <item index="4" class="java.lang.String" itemvalue="Python.datasearch" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.dataupdate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.datadb" />
-        <item index="2" class="java.lang.String" itemvalue="Python.databatch" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.datasearch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dataupdate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.datadb" />
+        <item index="3" class="java.lang.String" itemvalue="Python.databatch" />
       </list>
     </recent_temporary>
   </component>
@@ -558,10 +611,10 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21173105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3461047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1890166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1890166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29118773" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -587,7 +640,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -595,40 +648,97 @@
     <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/dataupdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="330" column="71" selection-start-line="330" selection-start-column="71" selection-end-line="330" selection-end-column="71" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -646,7 +756,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,37 +767,36 @@
           <caret line="330" column="71" selection-start-line="330" selection-start-column="71" selection-end-line="330" selection-end-column="71" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -705,7 +814,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,37 +825,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -764,7 +872,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,37 +883,36 @@
           <caret line="280" column="66" selection-start-line="280" selection-start-column="66" selection-end-line="280" selection-end-column="66" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -823,7 +930,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,37 +941,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -882,7 +988,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -900,92 +1006,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1010,37 +1060,90 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1058,37 +1161,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1194,21 +1296,8 @@
     <entry file="file://$PROJECT_DIR$/marketmanipulator/datautils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,13 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1230,51 +1312,89 @@
     <entry file="file://$PROJECT_DIR$/marketmanipulator/datadb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+          <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1434855242000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3032:3081" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1434855242000" expanded="true" signature="3530:3551" placeholder="DROP TABLE I..." />
-            <marker date="1434855242000" expanded="true" signature="4188:4228" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4304:4336" placeholder="SELECT * FRO..items..." />
-            <marker date="1434855242000" expanded="true" signature="4499:4551" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4639:4683" placeholder="SELECT * FRO..commerce_listings..." />
-            <marker date="1434855242000" expanded="true" signature="4868:4918" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5004:5046" placeholder="SELECT * FRO..commerce_prices..." />
-            <marker date="1434855242000" expanded="true" signature="5635:5855" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6528" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="6491:6676" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7137:7326" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="7517:7709" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8058:8102" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8218:8274" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="8410:8464" placeholder="INSERT INTO ..." />
-            <marker date="1434855242000" expanded="true" signature="9046:9087" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9194:9251" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9306:9364" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9479:9530" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9638:9671" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9778:9823" placeholder="DELETE FROM ..." />
-            <marker date="1434855242000" expanded="true" signature="9938:9981" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1443" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1347:1584" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1770" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1873" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="1757:1920" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2053:2220" placeholder="CREATE TABLE..missing_value_sell..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2385" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="2372:2576" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1435453418000" expanded="true" signature="3025:3046" placeholder="DROP TABLE I..." />
+            <marker date="1435453418000" expanded="true" signature="3963:4003" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4079:4111" placeholder="SELECT * FRO..items..." />
+            <marker date="1435453418000" expanded="true" signature="4273:4325" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4413:4457" placeholder="SELECT * FRO..commerce_listings..." />
+            <marker date="1435453418000" expanded="true" signature="4641:4691" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="4777:4819" placeholder="SELECT * FRO..commerce_prices..." />
+            <marker date="1435453418000" expanded="true" signature="5669:5889" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6562" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="6525:6710" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7171:7360" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="7551:7743" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8092:8136" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8252:8308" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="8444:8498" placeholder="INSERT INTO ..." />
+            <marker date="1435453418000" expanded="true" signature="9378:9419" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9526:9583" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9638:9696" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9811:9862" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="9970:10003" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10110:10155" placeholder="DELETE FROM ..." />
+            <marker date="1435453418000" expanded="true" signature="10270:10313" placeholder="DELETE FROM ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datafilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024711696">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/tradingpost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="112" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="112" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/marketmanipulator/dataupdate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50576603">
-          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
           <folding>
-            <element signature="e#22#32#0" expanded="true" />
+            <element signature="e#22#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datasearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketmanipulator/datavisualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01986755">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

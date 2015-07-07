@@ -1,7 +1,5 @@
 __author__ = 'Zivia'
 
-import sys
-
 import marketmanipulator.items as it
 import marketmanipulator.tradingpost as tp
 import marketmanipulator.datadb as db
@@ -34,8 +32,7 @@ def update_items(items_ids=None):
             items = it.items(items_ids_group)
 
             items_ids_counter += len(items_ids_group)
-            sys.stdout.write("\rUpdating Items: %d%%" % int(100 * float(items_ids_counter) / items_ids_len))
-            sys.stdout.flush()
+            du.print_update_progress(entity='Items', cur=items_ids_counter, max=items_ids_len)
 
             db.insert(items=items, scratch=True)
 
@@ -69,8 +66,7 @@ def update_commerce_listings(commerce_listings_ids=None):
             commerce_listings = tp.commerce_listings(commerce_listings_ids_group)
 
             commerce_listings_ids_counter += len(commerce_listings_ids_group)
-            sys.stdout.write("\rUpdating Commerce Listings: %d%%" % int(100 * float(commerce_listings_ids_counter) / commerce_listings_ids_len))
-            sys.stdout.flush()
+            du.print_update_progress(entity='Commerce Listings', cur=commerce_listings_ids_counter, max=commerce_listings_ids_len)
 
             db.insert(commerce_listings=commerce_listings, scratch=True)
 
@@ -103,8 +99,7 @@ def update_commerce_prices(commerce_prices_ids=None):
             commerce_prices = tp.commerce_prices(commerce_prices_ids_group)
 
             commerce_prices_ids_counter += len(commerce_prices_ids_group)
-            sys.stdout.write("\rUpdating Commerce Prices: %d%%" % int(100 * float(commerce_prices_ids_counter) / commerce_prices_ids_len))
-            sys.stdout.flush()
+            du.print_update_progress(entity='Commerce Price', cur=commerce_prices_ids_counter, max=commerce_prices_ids_len)
 
             db.insert(commerce_prices=commerce_prices, scratch=True)
 
@@ -120,6 +115,4 @@ def update_commerce_prices(commerce_prices_ids=None):
 
 if __name__ == "__main__":
 
-    update_items()
-    update_commerce_listings()
-    update_commerce_prices()
+    update_all()

@@ -1,9 +1,6 @@
 __author__ = 'Zivia'
 
-import items as it
-import tradingpost as tp
-import datautils as du
-from texttable import Texttable
+import datadb as db
 
 
 class InvalidIdError(Exception):
@@ -17,83 +14,55 @@ class InvalidIdError(Exception):
         return repr(self.value)
 
 
-def search_commerce_listings(ids=None):
+def search_all(ids=None, scratch=False):
 
     if not (isinstance(ids, list) and all(ids[x] > 0 for x in xrange(len(ids)))):
 
         raise InvalidIdError('input must be list of positive integers')
 
-    buy_results = list()
-    buy_results.append(['Buy Listings', 'Buy Unit Price', 'Buy Quantity'])
-    sell_results = list()
-    sell_results.append(['Sell Listings', 'Sell Unit Price', 'Sell Quantity'])
+    search = db.select(items_ids=ids, commerce_listings_ids=ids, commerce_prices_ids=ids, scratch=scratch)
 
-    commerce_listings = tp.commerce_listings(ids)
-
-    for commerce_listing in commerce_listings:
-
-        print 'Commerce Listing Data for ' + it.items(commerce_listing[u'id'])[0][u'name'] + '\n'
-
-        for buy in xrange(len(commerce_listing[u'buys'])):
-
-            buy_listings = commerce_listing[u'buys'][buy][u'listings']
-            buy_unit_price = du.format_coin(commerce_listing[u'buys'][buy][u'unit_price'])
-            buy_quantity = commerce_listing[u'buys'][buy][u'quantity']
-
-            buy_results.append([buy_listings, buy_unit_price, buy_quantity])
-
-        for sell in xrange(len(commerce_listing[u'sells'])):
-
-            sell_listings = commerce_listing[u'sells'][sell][u'listings']
-            sell_unit_price = du.format_coin(commerce_listing[u'sells'][sell][u'unit_price'])
-            sell_quantity = commerce_listing[u'sells'][sell][u'quantity']
-
-            sell_results.append([sell_listings, sell_unit_price, sell_quantity])
-
-        buy_table = Texttable()
-        buy_table.set_deco(Texttable.HEADER)
-        buy_table.set_cols_dtype(['t', 't', 't'])
-        buy_table.set_cols_align(['r', 'r', 'r'])
-        buy_table.add_rows(buy_results)
-
-        sell_table = Texttable()
-        sell_table.set_deco(Texttable.HEADER)
-        sell_table.set_cols_dtype(['t', 't', 't'])
-        sell_table.set_cols_align(['r', 'r', 'r'])
-        sell_table.add_rows(sell_results)
-
-        print buy_table.draw() + '\n'
-        print sell_table.draw() + '\n'
+    return search
 
 
-def search_commerce_prices(ids=None):
+def search_items(ids=None, scratch=False):
 
     if not (isinstance(ids, list) and all(ids[x] > 0 for x in xrange(len(ids)))):
 
         raise InvalidIdError('input must be list of positive integers')
 
-    search_results = list()
-    search_results.append(['Item Name', 'Buy Price', 'Sell Price', 'Demand', 'Supply'])
+    items = db.select(items_ids=ids, scratch=scratch)
 
-    for id in ids:
+    return items[0]
 
-        item = it.items(id)
 
-        item_name = item[0][u'name']
+def search_commerce_listings(ids=None, scratch=False):
 
-        commerce_price = tp.commerce_prices(id)
+    if not (isinstance(ids, list) and all(ids[x] > 0 for x in xrange(len(ids)))):
 
-        buy_price = du.format_coin(commerce_price[0][u'buys'][u'unit_price'])
-        sell_price = du.format_coin(commerce_price[0][u'sells'][u'unit_price'])
-        demand = commerce_price[0][u'buys'][u'quantity']
-        supply = commerce_price[0][u'sells'][u'quantity']
+        raise InvalidIdError('input must be list of positive integers')
 
-        search_results.append([item_name, buy_price, sell_price, demand, supply])
+    commerce_listings = db.select(commerce_listings_ids=ids, scratch=scratch)
 
-    search_table = Texttable()
-    search_table.set_deco(Texttable.HEADER)
-    search_table.set_cols_dtype(['t', 't', 't', 't', 't'])
-    search_table.set_cols_align(['l', 'r', 'r', 'r', 'r'])
-    search_table.add_rows(search_results)
+    return commerce_listings[1]
 
-    print search_table.draw() + '\n'
+
+def search_commerce_prices(ids=None, scratch=False):
+
+    if not (isinstance(ids, list) and all(ids[x] > 0 for x in xrange(len(ids)))):
+
+        raise InvalidIdError('input must be list of positive integers')
+
+    commerce_prices = db.select(commerce_prices_ids=ids, scratch=scratch)
+
+    return commerce_prices[2]
+
+
+if __name__ == "__main__":
+
+    search_ids = [75, 97]
+
+    print search_all(search_ids)
+    print search_items(search_ids)
+    print search_commerce_listings(search_ids)
+    print search_commerce_prices(search_ids)
