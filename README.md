@@ -1,12 +1,12 @@
 # README #
 
-MarketManipulator is a Python program that interfaces with the Guild Wars 2 API (found at https://api.guildwars2.com/). It analyzes the state of the Guild Wars 2 Trading Post, then makes future market predictions and formulates buy/sell order lists to help the user achieve a maximum profits from flipping items. 
+GW2-Supply-Crate is a Python wrapper for the Guild Wars 2 API (found at https://api.guildwars2.com/). Additionally, it provides a variety of tools for data visualization, history tracking, and other forms of data analysis. 
 
 Version 0.0.1
 
 ### Dependencies ###
 
-MarketManipulator requires the following Python modules to run:
+GW2-Supply-Crate requires the following Python modules to run:
 
 * cov-core==1.15.0
 * coverage==3.7.1
