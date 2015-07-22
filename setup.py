@@ -33,9 +33,9 @@ class PyTest(TestCommand):
         sys.exit(errcode)
 
 setup(
-    name='marketmanipulator',
+    name='gw2-supply-crate',
     version=marketmanipulator.__version__,
-    url='https://bitbucket.org/Zivia/marketmanipulator',
+    url='https://bitbucket.org/Zivia/gw2-supply-crate',
     license='Apache Software License',
     author='Troy Squillaci',
     tests_require=['pytest'],
@@ -47,10 +47,10 @@ setup(
     author_email='zivia@unm.edu',
     description='Real time interfacing and data analysis with the Guild Wars 2 API Trading Post.',
     long_description=long_description,
-    packages=['marketmanipulator'],
+    packages=['gw2-supply-crate'],
     include_package_data=True,
     platforms='any',
-    test_suite='marketmanipulator.test.marketmanipulator_sandman',
+    test_suite='gw2-supply-crate.test.marketmanipulator_sandman',
     classifiers = [
         'Programming Language :: Python',
         'Development Status :: 4 - Beta',

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MarketManipulator.iml" filepath="$PROJECT_DIR$/.idea/MarketManipulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GW2-Supply-Crate.iml" filepath="$PROJECT_DIR$/.idea/GW2-Supply-Crate.iml" />
     </modules>
   </component>
 </project>
