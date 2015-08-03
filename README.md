@@ -1,6 +1,7 @@
 # README #
 
-GW2-Supply-Crate is a Python wrapper for the Guild Wars 2 API (found at https://api.guildwars2.com/). Additionally, it provides a variety of tools for data visualization, history tracking, and other forms of data analysis. 
+GW2-Supply-Crate is an intuitive Python wrapper for the Guild Wars 2 API (found at https://api.guildwars2.com/).
+It also includes a variety of tools for data visualization, history tracking, and other forms of data analysis.
 
 Version 0.0.1
 

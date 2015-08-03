@@ -1,9 +1,9 @@
 __author__ = 'Zivia'
 
-import marketmanipulator.items as it
-import marketmanipulator.tradingpost as tp
-import marketmanipulator.datadb as db
-import marketmanipulator.datautils as du
+import supplycrate.endpoints.items as it
+import supplycrate.endpoints.tradingpost as tp
+import supplycrate.datadb as db
+import supplycrate.datautils as du
 
 
 def update_all():

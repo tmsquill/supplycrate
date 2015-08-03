@@ -1,6 +1,6 @@
 __author__ = 'Zivia'
 
-import dataservice as ds
+import supplycrate.dataservice as ds
 
 
 def commerce_listings(ids=None):
