@@ -1,7 +1,7 @@
 __author__ = 'Zivia'
 
-import supplycrate.endpoints.items as it
-import supplycrate.endpoints.tradingpost as tp
+import supplycrate.endpoints.v2.items as it
+import supplycrate.endpoints.v2.tradingpost as tp
 import supplycrate.datadb as db
 import supplycrate.datautils as du
 

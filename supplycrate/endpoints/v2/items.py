@@ -56,11 +56,6 @@ def recipes(ids=None):
 
 def recipes_search(id=None, input=False, output=False):
 
-    if input and output:
-
-        # TODO
-        return
-
     if id is None:
 
         return ds.pull_data('https://api.guildwars2.com/v2/recipes/search')
