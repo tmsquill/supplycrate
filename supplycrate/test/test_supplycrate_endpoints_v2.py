@@ -15,136 +15,120 @@ class TestAuthenticated:
 
     def test_account(self):
 
-        assert auth.account() == self.access_token_error
+        response = auth.account()
+        assert response == self.access_token_error
 
+        response = auth.account(access_token=self.access_token)
         valid = {u'id', u'name', u'world', u'guilds', u'created'}
-        result = set(auth.account(access_token=self.access_token).keys()).issubset(valid)
-
-        assert result
+        assert set(response.keys()).issubset(valid)
 
     def test_account_bank(self):
 
-        assert auth.account_bank() == self.access_token_error
+        response = auth.account_bank()
+        assert response == self.access_token_error
 
+        response = auth.account_bank(access_token=self.access_token)
         valid = {u'id', u'count', u'skin', u'infusions', u'upgrades'}
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in auth.account_bank(access_token=self.access_token)]
-
-        assert all(result)
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
 
     def test_account_materials(self):
 
-        assert auth.account_materials() == self.access_token_error
+        response = auth.account_materials()
+        assert response == self.access_token_error
 
+        response = auth.account_materials(access_token=self.access_token)
         valid = {u'id', u'category', u'count'}
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in auth.account_materials(access_token=self.access_token)]
-
-        assert all(result)
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
 
     def test_characters(self):
 
-        assert auth.characters() == self.access_token_error
+        response = auth.characters()
+        assert response == self.access_token_error
 
-        result = [True if isinstance(x, unicode) else False for x in auth.characters(access_token=self.access_token)]
-
-        assert all(result)
+        response = auth.characters(access_token=self.access_token)
+        assert all([True if isinstance(x, unicode) else False for x in response])
 
     def test_commerce_transactions(self):
 
-        assert auth.commerce_transactions() == self.access_token_error
+        response = auth.commerce_transactions()
+        assert response == self.access_token_error
 
+        response = auth.commerce_transactions(access_token=self.access_token)
         valid = {u'current', u'history'}
-        result = set(auth.commerce_transactions(access_token=self.access_token)).issubset(valid)
+        assert set(response).issubset(valid)
 
-        assert result
-
+        response = auth.commerce_transactions(second_level_endpoint='current', access_token=self.access_token)
         valid = {u'buys', u'sells'}
-        result = set(auth.commerce_transactions(second_level_endpoint='current',
-                                                access_token=self.access_token)).issubset(valid)
+        assert set(response).issubset(valid)
 
-        assert result
-
+        response = auth.commerce_transactions(second_level_endpoint='history', access_token=self.access_token)
         valid = {u'buys', u'sells'}
-        result = set(auth.commerce_transactions(second_level_endpoint='history',
-                                                access_token=self.access_token)).issubset(valid)
+        assert set(response).issubset(valid)
 
-        assert result
-
+        response = auth.commerce_transactions(second_level_endpoint='current',
+                                              third_level_endpoint='buys',
+                                              access_token=self.access_token)
         valid = {u'created', u'price', u'item_id', u'id', u'quantity'}
-        response = auth.commerce_transactions(second_level_endpoint='current',
-                                              third_level_endpoint='buys',
-                                              access_token=self.access_token)
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
 
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in response]
-
-        assert result
-
-        valid = {u'created', u'price', u'purchased', u'item_id', u'id', u'quantity'}
         response = auth.commerce_transactions(second_level_endpoint='current',
                                               third_level_endpoint='sells',
                                               access_token=self.access_token)
-
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in response]
-
-        assert result
-
         valid = {u'created', u'price', u'purchased', u'item_id', u'id', u'quantity'}
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
+
         response = auth.commerce_transactions(second_level_endpoint='history',
                                               third_level_endpoint='buys',
                                               access_token=self.access_token)
-
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in response]
-
-        assert result
-
         valid = {u'created', u'price', u'purchased', u'item_id', u'id', u'quantity'}
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
+
         response = auth.commerce_transactions(second_level_endpoint='history',
                                               third_level_endpoint='sells',
                                               access_token=self.access_token)
-
-        result = [True if x is None or set(x.keys()).issubset(valid) else False for x in response]
-
-        assert result
+        valid = {u'created', u'price', u'purchased', u'item_id', u'id', u'quantity'}
+        assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
 
     def test_tokeninfo(self):
 
-        assert auth.tokeninfo() == self.access_token_error
+        response = auth.tokeninfo()
+        assert response == self.access_token_error
 
+        response = auth.tokeninfo(access_token=self.access_token)
         valid = {u'id', u'name', u'permissions'}
-        result = set(auth.tokeninfo(access_token=self.access_token).keys()).issubset(valid)
-
-        assert result
+        assert set(response.keys()).issubset(valid)
 
 
 class TestItems:
 
     def test_items(self):
 
-        assert all([isinstance(x, int) for x in it.items()])
+        response = it.items()
+        assert all([isinstance(x, int) for x in response])
 
+        response = it.items(it.items())
         valid = {u'id', u'name', u'icon', u'description', u'type', u'rarity', u'level',
                  u'vendor_value', u'default_skin', u'flags', u'game_types', u'restrictions', u'details'}
-        result = [set(x.keys()).issubset(valid) for x in it.items(it.items())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_materials(self):
 
-        assert all(isinstance(x, int) for x in it.materials())
+        response = it.materials()
+        assert all(isinstance(x, int) for x in response)
 
+        response = it.materials(it.materials())
         valid = {u'id', u'name', u'items'}
-        result = [set(x.keys()).issubset(valid) for x in it.materials(it.materials())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_recipes(self):
 
-        assert all(isinstance(x, int) for x in it.recipes())
+        response = it.recipes()
+        assert all(isinstance(x, int) for x in response)
 
+        response = it.recipes(it.recipes())
         valid = {u'id', u'type', u'output_item_id', u'output_item_count', u'time_to_craft_ms', u'disciplines',
                  u'min_rating', u'flags', u'ingredients'}
-        result = [set(x.keys()).issubset(valid) for x in it.recipes(it.recipes())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_recipes_search(self):
 
@@ -153,44 +137,46 @@ class TestItems:
 
     def test_skins(self):
 
-        assert all(isinstance(x, int) for x in it.skins())
+        response = it.skins()
+        assert all(isinstance(x, int) for x in response)
 
+        response = it.skins(it.skins())
         valid = {u'id', u'name', u'type', u'flags', u'restrictions', u'icon', u'description', u'details'}
-        result = [set(x.keys()).issubset(valid) for x in it.skins(it.skins())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
 
 class TestMapInformation:
 
     def test_continents(self):
 
-        assert all(isinstance(x, int) for x in mi.continents())
+        response = mi.continents()
+        assert all(isinstance(x, int) for x in response)
 
+        response = mi.continents(mi.continents())
         valid = {u'id', u'name', u'continent_dims', u'min_zoom', u'max_zoom', u'floors'}
-        result = [set(x.keys()).issubset(valid) for x in mi.continents(mi.continents())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_maps(self):
 
-        assert all(isinstance(x, int) for x in mi.maps())
+        response = mi.maps()
+        assert all(isinstance(x, int) for x in response)
 
+        response = mi.maps(mi.maps())
         valid = {u'id', u'name', u'min_level', u'max_level', u'default_floor', u'floors', u'region_id',
                  u'region_name', u'continent_id', u'continent_name', u'map_rect', u'continent_rect'}
-        result = [set(x.keys()).issubset(valid) for x in mi.maps(mi.maps())]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
 
 class TestTradingPost:
 
     def test_commerce_listings(self):
 
-        assert all(isinstance(x, int) for x in tp.commerce_listings())
+        response = tp.commerce_listings()
+        assert all(isinstance(x, int) for x in response)
 
+        response = tp.commerce_listings(tp.commerce_listings())
         valid = {u'id', u'buys', u'sells'}
-        assert all([set(x.keys()).issubset(valid) for x in tp.commerce_listings(24)])
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_commerce_exchange(self):
 
@@ -200,60 +186,63 @@ class TestTradingPost:
 
     def test_commerce_prices(self):
 
-        assert all(isinstance(x, int) for x in tp.commerce_prices())
+        response = tp.commerce_prices()
+        assert all(isinstance(x, int) for x in response)
 
+        response = tp.commerce_prices(tp.commerce_prices())
         valid = {u'id', u'buys', u'sells'}
-        assert all([set(x.keys()).issubset(valid) for x in tp.commerce_prices(24)])
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
 
 class TestMiscellaneous:
 
     def test_build(self):
 
+        response = misc.build()
         valid = {u'id'}
-        assert set(misc.build().keys()).issubset(valid)
+        assert set(response.keys()).issubset(valid)
 
     def test_colors(self):
 
-        assert all(isinstance(x, int) for x in misc.colors())
+        response = misc.colors()
+        assert all(isinstance(x, int) for x in response)
 
+        response = misc.colors(15)
         valid = {u'id', u'name', u'base_rgb', u'cloth', u'leather', u'metal'}
-        result = [set(x.keys()).issubset(valid) for x in misc.colors(15)]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_files(self):
 
-        assert all(isinstance(x, unicode) for x in misc.files())
+        response = misc.files()
+        assert all(isinstance(x, unicode) for x in response)
 
+        response = misc.files('map_complete')
         valid = {u'id', u'icon'}
-        result = [set(x.keys()).issubset(valid) for x in misc.files('map_complete')]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_quaggans(self):
 
-        assert all(isinstance(x, unicode) for x in misc.quaggans())
+        response = misc.quaggans()
+        assert all(isinstance(x, unicode) for x in response)
 
+        response = misc.quaggans('box')
         valid = {u'id', u'url'}
-        result = [set(x.keys()).issubset(valid) for x in misc.quaggans('box')]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_specializations(self):
 
-        assert all(isinstance(x, int) for x in misc.specializations())
+        response = misc.specializations()
+        assert all(isinstance(x, int) for x in response)
 
+        response = misc.specializations(1)
         valid = {u'id', u'name', u'profession', u'elite', u'icon', u'minor_traits', u'major_traits', u'background'}
-        result = [set(x.keys()).issubset(valid) for x in misc.specializations(1)]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_worlds(self):
 
-        assert all(isinstance(x, int) for x in misc.worlds())
+        response = misc.worlds()
+        assert all(isinstance(x, int) for x in response)
 
+        response = misc.worlds(1001)
         valid = {u'id', u'name'}
-        result = [set(x.keys()).issubset(valid) for x in misc.worlds(1001)]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in response])

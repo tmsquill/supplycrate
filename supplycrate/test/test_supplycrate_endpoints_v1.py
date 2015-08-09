@@ -13,23 +13,17 @@ class TestDynamicEvents:
     def test_event_names(self):
 
         valid = {u'id', u'name'}
-        result = [set(x.keys()).issubset(valid) for x in de.event_names()]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in de.event_names()])
 
     def test_map_names(self):
 
         valid = {u'id', u'name'}
-        result = [set(x.keys()).issubset(valid) for x in de.map_names()]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in de.map_names()])
 
     def test_world_names(self):
 
         valid = {u'id', u'name'}
-        result = [set(x.keys()).issubset(valid) for x in de.world_names()]
-
-        assert all(result)
+        assert all([set(x.keys()).issubset(valid) for x in de.world_names()])
 
     def test_event_details(self):
 
