@@ -6,7 +6,7 @@ import codecs
 import os
 import sys
 
-import marketmanipulator
+import supplycrate
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -19,7 +19,7 @@ def read(*filenames, **kwargs):
             buf.append(f.read())
     return sep.join(buf)
 
-long_description = read('README.txt', 'CHANGES.txt')
+long_description = read('README.md')
 
 class PyTest(TestCommand):
     def finalize_options(self):
@@ -34,35 +34,26 @@ class PyTest(TestCommand):
 
 setup(
     name='supplycrate',
-    version=marketmanipulator.__version__,
-    url='https://bitbucket.org/Zivia/supplycrate',
-    license='Apache Software License',
+    #version=supplycrate.__version__,
+    version='0.0.1',
+    url='https://bitbucket.org/Zivia/gw2-supply-crate/overview',
+    license='MIT License',
     author='Troy Squillaci',
     tests_require=['pytest'],
-    install_requires=['Flask>=0.10.1',
-                    'Flask-SQLAlchemy>=1.0',
-                    'SQLAlchemy==0.8.2',
-                    ],
+    install_requires=[
+        # TODO
+    ],
     cmdclass={'test': PyTest},
     author_email='zivia@unm.edu',
-    description='Real time interfacing and data analysis with the Guild Wars 2 API Trading Post.',
+    description='Python wrapper for the Guild Wars 2 API.',
     long_description=long_description,
     packages=['supplycrate'],
     include_package_data=True,
     platforms='any',
-    test_suite='supplycrate.test.marketmanipulator_sandman',
-    classifiers = [
-        'Programming Language :: Python',
-        'Development Status :: 4 - Beta',
-        'Natural Language :: English',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
-        'Operating System :: OS Independent',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Software Development :: Libraries :: Application Frameworks',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        ],
+    test_suite='supplycrate.test.test_supplycrate',
+    classifiers=[
+        # TODO
+    ],
     extras_require={
         'testing': ['pytest'],
     }

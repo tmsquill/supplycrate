@@ -2,11 +2,6 @@ __author__ = 'Zivia'
 
 import supplycrate.dataservice as ds
 
-def events():
-
-    # TODO
-    pass
-
 
 def event_names(lang=None):
 

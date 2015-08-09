@@ -41,6 +41,4 @@ def map_floor(continent_id=None, floor=None, lang=None):
 
             query += str('&lang=' + lang)
 
-        print 'https://api.guildwars2.com/v1/map_floor' + query
-
         return ds.pull_data('https://api.guildwars2.com/v1/map_floor' + query)

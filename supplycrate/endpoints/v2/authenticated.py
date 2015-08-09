@@ -25,8 +25,21 @@ def characters(access_token=None):
 
 def commerce_transactions(access_token=None, second_level_endpoint=None, third_level_endpoint=None):
 
-    return ds.pull_data('https://api.guildwars2.com/v2/commerce/transactions/' + str(second_level_endpoint) +
-                        '/' + str(third_level_endpoint) + '?access_token=' + str(access_token))
+    request = 'https://api.guildwars2.com/v2/commerce/transactions'
+
+    if second_level_endpoint:
+
+        request += '/' + str(second_level_endpoint)
+
+    if third_level_endpoint:
+
+        request += '/' + str(third_level_endpoint)
+
+    if access_token:
+
+        request += '?access_token=' + str(access_token)
+
+    return ds.pull_data(request)
 
 
 def tokeninfo(access_token=None):

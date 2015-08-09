@@ -4,6 +4,9 @@ import json
 import urllib
 
 
+max_request_size = 200
+
+
 def pull_data(url=None):
 
     response = urllib.urlopen(url)
