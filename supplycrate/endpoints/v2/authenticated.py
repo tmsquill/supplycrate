@@ -13,9 +13,24 @@ def account_bank(access_token=None):
     return ds.pull_data('https://api.guildwars2.com/v2/account/bank?access_token=' + str(access_token))
 
 
+def account_dyes(access_token=None):
+
+    return ds.pull_data('https://api.guildwars2.com/v2/account/dyes?access_token=' + str(access_token))
+
+
 def account_materials(access_token=None):
 
     return ds.pull_data('https://api.guildwars2.com/v2/account/materials?access_token=' + str(access_token))
+
+
+def account_skins(access_token=None):
+
+    return ds.pull_data('https://api.guildwars2.com/v2/account/skins?access_token=' + str(access_token))
+
+
+def account_wallet(access_token=None):
+
+    return ds.pull_data('https://api.guildwars2.com/v2/account/wallet?access_token=' + str(access_token))
 
 
 def characters(access_token=None):

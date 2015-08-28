@@ -25,6 +25,23 @@ def colors(ids=None):
             return ds.pull_data('https://api.guildwars2.com/v2/colors?ids=' + str(ids))
 
 
+def currencies(ids=None):
+
+    if ids is None:
+
+        return ds.pull_data('https://api.guildwars2.com/v2/currencies')
+
+    else:
+
+        if isinstance(ids, list):
+
+            return ds.pull_data('https://api.guildwars2.com/v2/currencies?ids=' + ','.join(map(str, ids)))
+
+        else:
+
+            return ds.pull_data('https://api.guildwars2.com/v2/currencies?ids=' + str(ids))
+
+
 def files(ids=None):
 
     if ids is None:

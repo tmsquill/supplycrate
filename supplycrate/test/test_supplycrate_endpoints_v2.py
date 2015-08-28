@@ -9,7 +9,7 @@ import supplycrate.endpoints.v2.miscellaneous as misc
 
 class TestAuthenticated:
 
-    access_token = 'BEA64142-D54D-EC4B-B6B2-F1E8D66378D096A9E8CB-BCD5-4B74-8E25-6A7DE5ED8C9A'
+    access_token = '46292751-7FAC-DE42-8BB3-0E8121F470D6BB172BEC-0B45-4C08-BBCC-4423D4A81FDA'
 
     access_token_error = {u'text': u'endpoint requires authentication'}
 
@@ -31,6 +31,14 @@ class TestAuthenticated:
         valid = {u'id', u'count', u'skin', u'infusions', u'upgrades'}
         assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
 
+    def test_account_dyes(self):
+
+        response = auth.account_dyes()
+        assert response == self.access_token_error
+
+        response = auth.account_dyes(access_token=self.access_token)
+        assert all(isinstance(x, int) for x in response)
+
     def test_account_materials(self):
 
         response = auth.account_materials()
@@ -39,6 +47,23 @@ class TestAuthenticated:
         response = auth.account_materials(access_token=self.access_token)
         valid = {u'id', u'category', u'count'}
         assert all([True if x is None or set(x.keys()).issubset(valid) else False for x in response])
+
+    def test_account_skins(self):
+
+        response = auth.account_skins()
+        assert response == self.access_token_error
+
+        response = auth.account_skins(access_token=self.access_token)
+        assert all(isinstance(x, int) for x in response)
+
+    def test_account_wallet(self):
+
+        response = auth.account_wallet()
+        assert response == self.access_token_error
+
+        response = auth.account_wallet(access_token=self.access_token)
+        valid = {u'id', u'value'}
+        assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_characters(self):
 
@@ -209,6 +234,15 @@ class TestMiscellaneous:
 
         response = misc.colors(15)
         valid = {u'id', u'name', u'base_rgb', u'cloth', u'leather', u'metal'}
+        assert all([set(x.keys()).issubset(valid) for x in response])
+
+    def test_currencies(self):
+
+        response = misc.currencies()
+        assert all(isinstance(x, int) for x in response)
+
+        response = misc.currencies('1')
+        valid = {u'id', u'name', u'description', u'order', u'icon'}
         assert all([set(x.keys()).issubset(valid) for x in response])
 
     def test_files(self):
